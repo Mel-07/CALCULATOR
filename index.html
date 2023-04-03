@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/style.css"><!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/League+Spartan">
+  
+  <title>Calculator app</title>
+
+</head>
+<body>
+
+  <div class="container">
+   
+    <nav>
+      <h1>calc</h1>
+      <div class="theme">
+        <p>Theme</p>
+        <span>
+          <div>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <span class="toggle" title="Toggle" role="Toggle">
+            <input type="checkbox" class="checkbox checkFirst" data-check-input>
+          </span>
+        </span>
+      </div>
+    </nav>
+
+        <input type="text" size="200" class=" display" value = ''  data-display  aria-readonly="true" readonly >
+
+    <form class="keys" id="Keys">
+      <input type="button" value= 7 data-num >
+      <input type="button" value= 8  data-num>
+      <input type="button" value= 9  data-num>
+      <input type="button" value= Del data-delete>
+      <input type="button" value= 4  data-num>
+      <input type="button" value= 5  data-num>
+      <input type="button" value= 6  data-num>
+      <input type="button" value= +  data-operator>
+      <input type="button" value= 1  data-num>
+      <input type="button" value= 2  data-num>
+      <input type="button" value= 3  data-num>
+      <input type="button" value= -  data-operator>
+      <input type="button" value= .  data-num>
+      <input type="button" value=0  data-num>
+      <input type="button" value= /  data-operator>
+      <input type="button" value= *  data-operator>
+      <input type="button" value="Reset"  data-reset>
+      <input type="button" data-equal  value= = >
+    </form>
+
+  </div>
+
+
+  
+  <div class="attribution">
+&copy;MEL Okocha
+  </div>
+</body>
+<script  src="./js/display.js" ></script>
+</html>

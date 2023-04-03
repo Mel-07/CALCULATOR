@@ -1,0 +1,210 @@
+@import url("https://fonts.google.com/specimen/League+Spartan");
+* {
+  padding: 0;
+  line-height: 1.4em;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: league, spartan;
+  font-weight: 400;
+  font-size: clamp(0.5rem, 1vw + 1rem, 1.15rem);
+  scroll-behavior: smooth;
+}
+
+*::after, ::before {
+  box-sizing: unset;
+  margin: unset;
+  padding: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: white;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 100%);
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body {
+  height: 100dvh;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(150px, 450px);
+  gap: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+
+span {
+  width: 2em;
+  display: flex;
+  flex-direction: column;
+}
+span div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle {
+  background-color: hsl(223, 31%, 20%);
+  height: 0.9em;
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  width: 2em;
+}
+.toggle input[type=checkbox] {
+  position: absolute;
+  appearance: none;
+  background-color: hsl(6, 63%, 50%);
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  cursor: inherit;
+}
+.toggle .checkFirst {
+  transform: translate(50%, 4px);
+  transition: ease-in-out 400ms;
+}
+.toggle .checkSecond {
+  transform: translate(140%, 4px);
+  transition: ease-in-out 400ms;
+}
+.toggle .checkThird {
+  transform: translate(240%, 4px);
+  transition: ease-in-out 400ms;
+}
+
+input[type=text] {
+  height: 2.6em;
+  text-align: right;
+  font-size: 1.5em;
+  border-radius: 0.2em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(224, 36%, 15%);
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.theme {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.theme p {
+  font-size: 0.5em;
+  font-weight: 700;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20px, 1fr));
+  gap: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: hsl(223, 31%, 20%);
+}
+form input {
+  border-radius: 0.2em;
+  font-weight: 700;
+  height: 2em;
+  font-size: inherit;
+  width: 100%;
+  box-shadow: 0px 3px 0px hsl(28, 16%, 65%);
+  border: none;
+  background-color: hsl(30, 25%, 89%);
+  cursor: pointer;
+}
+form input:focus {
+  background-color: hsl(0, 0%, 100%);
+}
+form input[data-reset] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 3px 0px hsl(224, 28%, 35%);
+  color: #fff;
+}
+form input[data-equal] {
+  grid-column-start: 3;
+  grid-column-end: -1;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 3px 0px hsl(6, 70%, 34%);
+}
+form input[data-delete] {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: inherit;
+  box-shadow: 0px 3px 0px hsl(224, 28%, 35%);
+}
+
+.attribution {
+  color: #fff;
+  transition: color ease-in-out 1s;
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-delay: 300ms;
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

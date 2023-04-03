@@ -1,0 +1,151 @@
+@use'index' as i;
+
+body{
+  height: 100dvh;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: i.$Very-dark-desaturated-blue;
+}
+.container{
+    display: grid;
+    grid-template-columns:minmax(150px, 450px);
+    gap: 1em;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: i.$White;
+}
+span{
+    width: 2em;
+    display: flex;
+    flex-direction:column; 
+    div{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.toggle{
+    background-color:i.$Very-dark-desaturated-blues;
+    height: .9em;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    width: 2em;
+    input[type='checkbox']{
+        position: absolute;
+        appearance: none;
+        background-color:i.$Red;
+        height: .5em;
+        width: .5em;
+        border-radius: 50%;
+        cursor: inherit;
+    }
+    .checkFirst{
+        transform: translate(50% ,4px);
+        transition: ease-in-out 400ms;
+    }
+
+    .checkSecond{
+        transform: translate(140% ,4px); 
+        transition: ease-in-out 400ms;  
+    }
+    .checkThird{
+        transform: translate(240% ,4px);
+        transition: ease-in-out 400ms;
+    }
+}
+
+input[type='text']{
+    height: 2.6em;
+    text-align: right;
+    font-size: 1.5em;
+    border-radius: .2em;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    background-color: i.$Very-dark-desaturated-bluess;
+    padding: 1rem;
+    color: i.$White;
+}
+
+h1{
+    font-size: 1em;
+    font-weight: 700;
+}
+.theme{
+    display: flex;
+    gap:.8rem;
+    align-items: center;
+    p{
+        font-size: .5em;
+        font-weight: 700;
+    
+    }
+}
+
+
+
+form{
+    display: grid;
+    grid-template-columns: repeat(4 ,minmax(20px,1fr));
+    gap: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    background-color: i.$Very-dark-desaturated-blues;
+    input{
+        border-radius: .2em;
+        font-weight: 700;
+        height: 2em;
+        font-size: inherit;
+        width: 100%;
+        box-shadow: 0px 3px 0px i.$Grayish-orange ;
+        border: none;
+        background-color: i.$Light-grayish-orange;
+        cursor: pointer;
+    }
+    input:focus{
+        background-color: i.$White;
+    }
+    input[data-reset]{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: i.$Desaturated-dark-blues;
+        box-shadow: 0px 3px 0px i.$Desaturated-dark-blue ;
+        color: #fff;
+    }
+    input[data-equal]{
+        grid-column-start: 3;
+        grid-column-end: -1;
+        background-color: i.$Red;
+        color: i.$White;
+        box-shadow: 0px 3px 0px i.$Dark-red ;
+    }
+    input[data-delete]{
+        background-color: i.$Desaturated-dark-blues;
+        color: i.$White;
+        font-weight: 700;
+        font-size: inherit;
+        box-shadow: 0px 3px 0px i.$Desaturated-dark-blue ;
+    }
+}
+.attribution{
+    color: #fff;
+    transition: color ease-in-out 1s;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-delay: 300ms;
+}
+@keyframes scale {
+    from{
+        scale: 0;
+
+    }
+    to{
+        scale: 100%;
+    }
+    
+}
+@import'median'

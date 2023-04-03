@@ -1,0 +1,55 @@
+@use'_color.scss' as i;
+@import url('https://fonts.google.com/specimen/League+Spartan');
+*{
+    padding: 0;
+    line-height: 1.4em;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: league,spartan;
+    font-weight: 400;
+    font-size:clamp(.5rem,1vw + 1rem, 1.15rem);
+    scroll-behavior: smooth;
+}
+*::after,::before{
+    box-sizing: unset;
+    margin: unset;
+    padding: unset;
+}
+a{
+    text-decoration: none;
+    
+}
+
+button{
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-color:white;
+}
+h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    
+}
+p{
+    font-size: .7rem;
+}
+::-webkit-scrollbar-track{
+    background-color: hsl(0, 0%, 100%);
+}
+::-webkit-scrollbar{
+    width: .4rem;
+ }
+// ::-webkit-scrollbar-thumb{
+//     background-color: rgba(255, 166, 0, 0.457);
+//     border-radius: 2em;
+// }
+// ::-webkit-scrollbar-corner{
+
+// }
