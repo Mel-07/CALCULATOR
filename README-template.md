@@ -16,9 +16,14 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Welcome! 👋
 
 ## Overview
+
+Thanks for checking out this front-end coding challenge.
+
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -41,8 +46,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ solution URL here](https://github.com/Mel-07/calculator)
+- Live Site URL: [ live site URL here]( https://mel-07.github.io/calculator/)
 
 ## My process
 
